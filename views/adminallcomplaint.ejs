@@ -1,0 +1,106 @@
+<!-- adminallcomplaint.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Complaints</title>
+    <style>
+        body {
+            background-color:#E5E1DA;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #171718;
+            margin-bottom: 20px;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #92C7CF;
+            
+            border: 0.5px solid #321458;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        strong {
+            color: #343a40;
+        }
+
+        p.no-complaints {
+            text-align: center;
+            color: #f8f8f8;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .home-button {
+            text-align: center;
+        }
+
+        .home-button button {
+            background-color: #274a4f;
+            border-radius: 5px;
+            color: white;
+            height: 35px;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>All Complaints <form action="/filter" method="post">
+       <select name="type" id="" style="height: 40px;">
+        <option value="">All</option>
+        <option value="mess">mess</option>
+        <option value="ragging">ragging</option>
+        <option value="hostel">hostel</option>  
+        <option value="washroom">washroom</option> 
+        <option value="room">room</option>       
+        <option value="others">other</option> </select>
+     <button type="submit" style="background-color: #274a4f;color:white;height:40px;width:80px;">submit</button></form></h1>
+    <div>
+        <% if (complaints.length > 0) { %>
+            <ul>
+                <% complaints.forEach(function(complaint) { %>
+                    <li>
+                        <strong>Name:</strong> <%= complaint.name %><br>
+                        <strong>Address:</strong> <%= complaint.address %><br>
+                        <strong>Registration Number:</strong> <%= complaint.registrationnumber %><br>
+                        <strong>Type:</strong> <%= complaint.type %><br>
+                        <strong>Mobile Number:</strong> <%= complaint.mobilenumber %><br>
+                        <strong>Description:</strong> <%= complaint.description %><br>
+                    </li>
+                <% }) %>
+            </ul>
+        <% } else { %>
+            <p class="no-complaints" style="color: red;">No complaints found.</p>
+        <% } %>
+    </div>
+    
+    <!-- Home button -->
+    <div class="home-button">
+        <a href="adminhome"><button>Home</button></a>
+    </div>
+</body>
+
+</html>

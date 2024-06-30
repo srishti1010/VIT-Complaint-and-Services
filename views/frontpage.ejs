@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Complaint App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    
+  /* Custom CSS styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Light gray */
+    /* background-image: linear-gradient(to right, black , grey);*/
+  }
+  .navbar {
+    background-color: #e5eaee; /* Blue */
+    color: #000000;
+  }
+  .navbar-nav .nav-link {
+    color: #000000; /* Black */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #007bff; /* Blue on hover */
+  }
+
+  .jumbotron {
+    background-color: rgb(65, 179, 196)
+; /* Green */
+    color: #fff; /* White */
+    padding: 100px 0;
+  }
+  .btn-get-started {
+    background-color: #0e2946; /* Blue */
+    color: #fff; /* White */
+    border: none;
+  }
+  .btn-get-started:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  .section {
+    padding: 50px 0;
+    color: #f6f6f6;
+  }
+  .section1 {
+    padding: 50px 0;
+    color: #101010;
+  }
+  .container12{
+    color: #000000;
+  }
+
+  .feature,
+  .resource,
+  .contact,
+  .testimonial {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .show {
+    opacity: 1;
+  }
+  .footer {
+    background-color: #343a40; /* Dark gray */
+    color: #fff; /* White */
+    padding: 20px 0;
+  }
+  .navbar-nav .nav-link {
+  color: #000000; /* Black */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Blue on hover */
+}
+.nav-link:link
+{
+    color: #000000;
+}
+</style>
+
+  </style>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand"  style="color: #000000; font-weight: bolder;" href="#">VIT COMPLAINT CONNECT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" >
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" >
+        
+          <a class="nav-link"  href="#features" style="color:black;">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resources" style="color:black;">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" style="color:black;"">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main content -->
+<div class="container">
+  <!-- Complaint section -->
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Got a Complaint?</h1>
+    <p class="lead">Let us hear it!</p>
+    <hr class="my-4">
+    <a class="btn btn-lg btn-get-started" href="userpage">Get Started</a>
+  </div>
+
+  <!-- Features section -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2 class="text-center mb-5" >Features</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="feature text-center">
+            <h3>Custom Animation</h3>
+            <p>Engage users with visually appealing custom animations that enhance the user experience and make your app stand out.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature text-center">
+            <h3>Content Slider</h3>
+            <p>Showcase your content in a dynamic and interactive way with a content slider. Display images, videos, or any other type of content seamlessly.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature text-center">
+            <h3>Contact Form</h3>
+            <p>Make it easy for users to get in touch with you by providing a convenient contact form. Gather feedback, answer queries, and improve user satisfaction.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources section -->
+  <!-- Resources -->
+<section id="resources" class="section">
+    <div class="container12">
+      <h2 class="text-center mb-5" style="color: #f6f6f6;">Resources Used</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">HTML</h4>
+              <p class="card-text">HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">CSS</h4>
+              <p class="card-text">CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">JavaScript</h4>
+              <p class="card-text">JavaScript is a programming language that enables interactive web pages and is an essential part of web development.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Node.js</h4>
+              <p class="card-text">Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside a web browser.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Testimonial section -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2 class="text-center mb-5">Client Testimonials</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial text-center">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
+            <footer class="blockquote-footer">John Doe</footer>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial text-center">
+            <p>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+            <footer class="blockquote-footer">Jane Smith</footer>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial text-center">
+            <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+            <footer class="blockquote-footer">Michael Johnson</footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="text-center mb-5">Contact Us</h2>
+      
+      <h4>Contact Information</h4>
+          <p>Visit us at:</p>
+          <p>123 University Avenue</p>
+          College Town, Studentland
+          Email: contact@studentcomplaintapp.com
+          Phone: +1 (555) 123-4567
+          Hours: Mon-Fri, 9am-5pm
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Follow Us</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Contact Information</h4>
+          <p>Visit us at:</p>
+          <p>123 University Avenue</p>
+          <p>College Town, Studentland</p>
+          <p>Email: contact@studentcomplaintapp.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+          <p>Hours: Mon-Fri, 9am-5pm</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-muted">© 2024 Student Complaint App. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+<a class="btn btn-lg btn-get-started" href="next-page.html">Get Started</a>
+</script>
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      $(".feature, .resource, .contact, .testimonial").each(function(){
+        var position = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > position - windowHeight + 200) {
+          $(this).addClass("show");
+        }
+      });
+    });
+  });
+</script>

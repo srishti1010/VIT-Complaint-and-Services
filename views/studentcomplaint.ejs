@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+    
+        input{
+
+            border: none;
+        }
+        #vit{
+            font-size:40px;
+            font-family:'Times New Roman', Times, serif;
+            color:rgb(51, 13, 40);
+            font-weight:900;
+            display: inline;
+            position:absolute;
+            left: 170px;
+            top: 25px;
+            
+        }
+        #symbol{
+            position:relative;
+            left:10px;
+            top:10px;
+        }
+        #dash{
+            position: absolute;
+            top:18px;
+            left:350px;
+            font-size: 30px;
+            top:25px;
+            font-weight: bolder;
+        }
+        #message{
+            position:absolute;
+            top:18px;
+            left: 1000px;
+        }
+        #not{
+            position:absolute;
+            top:18px;
+            left: 1100px;
+        }
+        #tri{
+            position:absolute;
+            top:18px;
+            left: 1200px;
+        }
+        #id{
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight:bold;
+            position:absolute;
+            top:27px;
+            left: 1250px;
+        }
+        #user{
+            position:absolute;
+            top:18px;
+            left: 1400px;
+        }
+        #con{
+            display:block;
+            position:absolute;
+            top:120px;
+            left:10px;
+        }
+        #dashboard, #services, #complaint,#mes {
+        margin-bottom: 20px;
+        }
+     
+        #my{
+            position:absolute;
+            top:300px;
+        }
+        #setting{
+            position:absolute;
+            top:350px;
+        }
+        #help{
+            position:absolute;
+            top:500px;
+           white-space: nowrap; 
+    }
+         #con2{
+            height: 650px;
+            width:89%;
+            position:absolute;
+            left: 170px;
+            top:70px;
+            background-color: rgb(9, 9, 10);
+            color:white;
+            padding:20px;
+            box-sizing: border-box;
+         } 
+    #purple {
+    background-color:purple;
+    padding: 10px;
+    border-radius: 5px;
+    height:190px;
+    width: 57%;
+    
+    
+
+}
+
+button[value="Check out"] {
+    background-color: white;
+    color: rgb(105, 161, 224); 
+    height:40px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+button[value="Learn More"] {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white; /* Add border */
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#para{
+    font-size: 40px;
+    font-weight: 100;
+}
+#dibbe{
+    display: inline;
+    background-color:purple;
+    width: 120px;
+    border-radius: 5px;
+    position:relative;
+    top:10px;
+    padding: 10px;
+    height: 40px;
+    margin:13px;
+    color:white;
+
+}
+#dibb,#dib,#di,#d{
+    display: inline;
+    background-color:white;
+    width: 120px;
+    border-radius: 10px;
+    position:relative;
+    top:10px;
+    height: 40px;
+    margin:15px;
+}
+#room, #trans, #main, #comp {
+            height: 100px;
+            width: 365px;
+            border-radius: 5%;
+            background-color: white;
+            margin-top: 10px;
+        }
+
+        #room {
+             position:relative;
+             top:10px;
+        }
+        #trans {
+             position:absolute;
+             top:310px;
+             left: 400px;
+        }
+        #main {
+            position:relative;
+             top:10px;
+
+        }
+        #comp {
+             position:absolute;
+             top:420px;
+             left: 400px;
+        }
+        #room img,#trans img,#main img,#comp img {
+         border-radius: 100%;
+         object-fit: cover;
+         padding: 5px;
+     
+}
+#room-text {
+            font-weight: bold;
+            margin-left: 20px;
+            font-size: 16px; 
+            color:black; 
+            position:absolute;
+            top: 25px;
+            left: 100px;
+        }
+
+        #f1{
+            display: inline;
+        }
+        #trans-text {
+            font-weight: bold;
+            margin-left: 20px;
+            font-size: 16px; 
+            color:black; 
+            position:absolute;
+            top: 25px;
+            left: 120px;
+        }
+        #main-text {
+            font-weight: bold;
+            margin-left: 30px;
+            font-size: 16px; 
+            color:black; 
+            position:absolute;
+            top: 25px;
+            left: 100px;
+        }
+        #comp-text {
+            font-weight: bold;
+            margin-left: 10px;
+            font-size: 16px; 
+            color:black; 
+            position:absolute;
+            top: 25px;
+            left: 125px;
+        }
+     
+    #id{
+        position:absolute;
+        top:14px;
+    }
+       
+    a:link{
+            text-decoration: none;
+        }
+        a{
+            font-weight: bolder;
+            color: black;
+        }
+        fieldset{
+        width:50%;
+        
+      
+     }
+     textarea{
+            width:52%;
+            
+        }
+    </style>
+</head>
+<body bgcolor="white">
+    <div id="symbol"><img src="https://vit.ac.in/SGGES-21/assets/vit%20logo.png" height="130"><div id="vit" >Complaint Information</div><div id="dash"></div>
+    
+    <div id="id" style="position:absolute;top: 25px;left: 1300px;"><%=check.registrationNumber%></div>
+    <div id="user"><a href="studentprofile"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsLQpfDe3ep3Ok_0Mv_jXJvOxvZ5Y0ImFdmBNa6XydDw&s" height="40" ></a></div>
+    <div id="con">
+    <div id="dashboard" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFBZwOg27YgEy8Nfx-y5vLLcxfqqVJc44jg7X8DP9IrFncNEnooZJcI7WJ7F2lzmV0LqI&usqp=CAU" height="30"><div id="1" style="position:absolute;top:9px;left:25px;"><a href="studenthome"> Dashboard </a></style></div> </div>
+    <div id="services" ><img src="https://img.freepik.com/premium-vector/service-logo-template-design-vector_20029-568.jpg" height="30" > <div id="2" style="position:absolute;top:59px;left:25px;"><a href="studentservice"> Services</a></div></div>
+    <div id="complaint" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8BAQHq6ur7+/sTExMEBATn5+f5+fmqqqrZ2dnU1NT29vbf399VVVWenp6VlZVlZWWysrJcXFyHh4cfHx9tbW0PDw8YGBhQUFC4uLjExMSQkJAtLS19fX1gYGDPz887OztHR0cyMjK/v783NzdycnJur9ZOAAAEy0lEQVR4nO2ci1LqMBCGG2IodwQKiKjA4fj+r3hawCPXlnb/XbrMfjPO6CiT/dw0tyaJ2o3nph01ouemYYbqMUP9mKF+zFA/ZqgfM9SPGerHDPVjhvoxQ/2YoX7MUD9mqB8z1I8Z6scM9WOG+jFD/ZihfsxQP2aoHzPUjxnqxwz1Y4b6MUP9mKF+zFA/ZgjFe3/4Rq5M6RzGq8Gw1ZEUlDWMJ25HMpIrU9DQR83E/TD2YnkUM/RRY+7CQTC4V7FnUdDwy4XwIxhcS6ZYScOOOyGJZcoVfA4nJ4LBrYTKlTNcnxkOhMoVMNxVx25vdlpL3bS3+wV7gyOSw2ZrfO6XMe+3mvyFCxgu3nbVMpzY/fzUX3AXz20YD65l75jZwLPWVWbD0ctxwq6R/u5lwanIatgc59v9p88YBJ+hj97vkTvwzpZGxhwOCurnaVVl6x65DP1+DHOvYfp3y4hnvsFk6KNhiSq6Z8hTT7ly2Crrl6ZxxKLIZNgpVrpCmyMUHkP/UcnwQ08Ol+eDtDuZMMTCYtirlMEMhpE4i+G0suEU39hwGPbu7gdPyT7Ug0fDYfhZOYXOfcKjYTDsEgSdq38t9VlnX6mSZjCsMjLk8I2Uwzd0OHjDJsUvTT46Hrxh6RHpiSF+dIo3/KIYpryC48G3NEmxRC4JeJoIN+xVb0gPgDt9uOGCbAheQYUbLsmGS2xAYMPdW0KiIbipgeew2tz3mD/YgOCGZEEXsAHV0NBhA0Ib0iYWe7rQiNCGDYAhOCKwIWncfQC7WIM2rL4IZYZVsVpaFoRhvVsaRFta797i+ftDDzCs+QwYYIgNyAxLY4bqDREtDTQguGEMMKx3W/r8syfEyBu7YIo2XAEMsTvA0YYjgCF2SRhtOCkWKCCAl4TRhmNADsfQnZhoQ7pfyDrE+hpW2892TgcZEthwCTFc1jiH9LcWGdA3F0hDH23JL572vMNiQufwL8TPuTUwJqjhgLBX6BjosS+k4WofHcIQ2JwCDdsAt19gw2+cYefi9BaJgMoizHAEFoQNwCGGPvKUPaW3+Owihm+YHPbWxfGWJrg14mGEGFJ2lObTomcRYBhX37hezNRTFemG3Y0rOiZambTt2lDf09ANN1x6B6ibhsmG5c+olSLN4vCxhoj3hfmKLtDqKdUQNV/KU6TNpaiGpF3dd0I7oGCGRbDX0vDoWtrlfwwf3NJwV9OQVVLSqIZqWOXQdjmI3SHAMGp/Jy95FORonvPReTIlT4TphlkV8jkULIPP8z58+B8+1LCYgp1uH8zFCxhG+ZNH9DGnCwQMN7mG1IakEAHD241tZg59z3QNAcPcs17g4yNXkLjrq5+TRP5b2yQMV7eWUtPOkP9+SJEb6T5vLhZvuQsXupHOJzceRfz9ApfI3JvYnO1u9DytojPXl7jDVOhmyOz62Ys0jslrofcgdfdl93KjDfis6C3kbvccZbsYwq7Jyb76LFcmXUHwlt14+9sxfnciqVu9Ze/zjjuLwbC1zV4pPd9d0A/DDPVjhvoxQ/2YoX7MUD9mqB8z1I8Z6scM9WOG+jFD/ZihfsxQP2aoHzPUjxnqxwz1Y4b6MUP9mKF+zFA/ZqgfM9SPGerHDPVjhvoxQ/2YoX7MUD+NqN14btr/AIp2MeM6umHbAAAAAElFTkSuQmCC" height="30">  <div id="3" style="position:absolute;top:115px;left:25px;"><a href="studentcomplaint"> Complaints </a></div></div>
+    <div id="mes" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbq9PJpPh-AnviQCSYmceiyOm53CJSkMqGvz2wEfxhy1zTvSXdxc1It7xh9KvdTysCOQw&usqp=CAU" height="30">  <div id="2" style="position:absolute;top:169px;left:30px;"><a href="studentcomplainthistory"> History </a></div></div>
+    <div id="my" ><img src="https://png.pngtree.com/png-vector/20191110/ourmid/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg" height="30">  <div id="2" style="position:absolute;top:9px;left:25px; white-space: nowrap; "><a href="studentprofile"> My Profile </a> </div></div>
+    <div id="setting"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVpygZ5U1fVNNXuejuqmeOn80Mu779lfDEJ7-VxCFjeJlrGZnCkJoHFihCe1ySAPD98yY&usqp=CAU" height="30">  <div id="2" style="font-weight:bolder;position:absolute;top:9px;left:30px;">Settings</div></div>
+    <div id="help"><img src="https://t3.ftcdn.net/jpg/05/10/88/82/360_F_510888200_EentlrpDCeyf2L5FZEeSfgYaeiZ80qAU.jpg" height="20"><div id="2" style="position:absolute;top:4px;left:30px;font-weight: bolder;">Help And Support</div> </div>
+    </div>
+    <div id="con2">
+        <center>
+        <form action="/complaintsubmit" method="post">
+            <fieldset>
+              <legend>Room no.</legend>
+              <input type="text" placeholder="Enter block and room no." name="address" id="" style="height:30px;width:100%;background-color: rgb(9, 9, 9);color: white;border: none;font-size: larger;">
+            </fieldset>
+            <br>
+            <fieldset>
+              <legend>Name</legend>
+              <input type="text" style="height:30px;width:100%;background-color: transparent;border: none;font-size: larger;background-color: rgb(0, 0, 0);color: white" placeholder="Please enter name" name="name">
+              </fieldset>
+              <br>
+              <fieldset>
+                  <legend>Registration Number</legend>
+                  <input type="text" placeholder="enter the registrationnumber" name="registrationnumber" style="height:40px;width:100%;background-color: rgb(9, 9, 9);color: white;border: none;font-size: larger;" placeholder="Please enter Registration Number">
+                  </fieldset>
+                  <br>
+                  <fieldset>
+                      <legend>Contact Number</legend>
+                      <div style="display: flex; align-items: center;border: none;">
+                        <select style="height:33px;width:80px;background-color: transparent; border: none;color:white;font-size: larger;">
+                          <option value="91">+91</option>
+                          
+                        </select>
+                        <input type="number" name="mobilenumber" style="height:30px;border:none;width: calc(100% - 80px);background-color: transparent; border-left: none;color:white;font-size: larger;" placeholder="Please enter Contact number">
+                      </div>
+                    </fieldset>
+                    <br>
+                    <div id="f1">
+                        <fieldset style="width:50%;">
+                            <legend>Complain Regarding</legend>
+                            <select   name = "type" style="background-color:black;color:white;font-size: larger;border: none;width: 630px; ">
+          
+                              <option value="Select" >---Select---</option>
+                              <option value="mess">mess</option>
+                              <option value="room">room</option>
+                              <option value="hostel">hostel</option>
+                              <option value="washroom">washroom</option>
+                              <option value="ragging">ragging</option>
+                              <option value="not-available">others</option>
+                              
+                            </select>
+                          </fieldset><br>
+                    <textarea name="description" id="p1" cols="176" rows="5">Enter the complaint</textarea>
+                   
+                    <button id="but1" type="submit" style="position:absolute;height:40px;width:150px;background-color: rgb(63, 160, 221);color:white;border-radius:10%;bottom: 20px;left:500px;">Submit</button>  <button id="but2"style="position:absolute;height:40px;width:150px;border-radius:10%;bottom: 20px;;left:670px;background-color: rgb(63, 160, 221);color:white;border:black;" type="reset">Clear</button>
+                  </div>
+                </form>
+            </center>
+         <p style="color: red;font-weight: bolder;"> 
+            <% if (succ) { %>
+                 <%= succ %>
+            <% } %>
+            
+
+        </p>
+
+                  </div>
+              </div>
+          </div>
+</body>
+</html>

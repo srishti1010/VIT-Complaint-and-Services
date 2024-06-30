@@ -1,0 +1,94 @@
+<!-- adminraggingcomplaint.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragging Complaints</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:#FBF9F1;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0b0404;
+            margin-bottom: 20px;
+            font-size: 40px;;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #AAD7D9;
+    border: 1px solid #101010;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        strong {
+            color: #343a40;
+        }
+
+        p.no-complaints {
+            text-align: center;
+            color: #6c757d;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .home-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #274a4f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .home-btn:hover {
+            background-color: #559677;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="font-family: 'Times New Roman', Times, serif;">Ragging Complaints</h1>
+    <div>
+        <% if (raggingcomplaints.length > 0) { %>
+            <ul>
+                <% raggingcomplaints.forEach(function(complaint) { %>
+                    <li>
+                        <strong>Name:</strong> <%= complaint.name %><br>
+                        <strong>Address:</strong> <%= complaint.address %><br>
+                        <strong>Registration Number:</strong> <%= complaint.registrationnumber %><br>
+                        <strong>Type:</strong> <%= complaint.type %><br>
+                        <strong>Mobile Number:</strong> <%= complaint.mobilenumber %><br>
+                        <strong>Description:</strong> <%= complaint.description %><br>
+                    </li>
+                <% }) %>
+            </ul>
+        <% } else { %>
+            <p class="no-complaints">No ragging complaints found.</p>
+        <% } %>
+    </div>
+    <a href="/adminhome" class="home-btn">Home</a>
+</body>
+
+</html>

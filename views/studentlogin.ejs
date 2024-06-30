@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a:hover{
+  color: #df0812;
+}
+body {
+  background-color:rgb(235, 243, 245);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: rgb(170, 215, 217);
+  border:3px solid rgb(8, 8, 8);
+  line-height:60px;
+  width: 480px;
+  height: 550px;
+  position: absolute;
+  margin: auto;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  width: 56%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+}
+ 
+.img1{
+  width: 120px;
+  position: relative;
+  top: 20px;
+ border-radius: 60%;
+}
+
+.header {
+  font-size: 35px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  line-height: 35px;
+}
+
+.detail {
+  width: 100%;
+  height: 48px;
+  margin: 5px;
+  padding: 15px;
+  font-size: 15px;
+  color: rgb(182, 195, 195);
+  border: 2px solid rgb(218, 214, 214);
+  border-radius: 15px;
+}
+
+.detail:focus {
+  box-shadow: 0px -7px 3px -2px rgba(15, 91, 231, 0.4),
+    0px 7px 3px -2px rgba(15, 91, 231, 0.4),
+    7px 0px 3px -2px rgba(15, 91, 231, 0.4),
+    -7px 0px 3px -2px rgba(15, 91, 231, 0.4);
+  outline: none;
+}
+
+h4 {
+  font-size: 13px;
+  font-weight: 700;
+  position: relative;
+  left: -60px;
+  margin: 5px;
+}
+
+
+.btn {
+  width: 100%;
+  height: 40px;
+  border: hidden;
+  border-radius: 20px;
+  font-size: 18px;
+  margin: 5px 0px;
+}
+
+
+.int {
+  background-color: #101011;
+  border:2px solid black;
+  margin: 10px 0px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+.int:hover{
+  background-color: #5f6062;
+}
+
+
+.or {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 10px 0px;
+}
+
+
+.fbk {
+  background-color: rgb(24, 25, 26);
+  margin: 5px 0px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+.fbk a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.fbk:hover{
+  background-color: rgb(8, 110, 206);
+}
+
+.ggl{
+  text-align: center;
+  background-color: #ccc;
+}
+
+.ggl a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.ggl:hover{
+  background-color: #a0a0a0;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 10px;
+  opacity: 0.7;
+}
+
+p:last-child {
+  opacity: 1;
+}
+.error{
+  font-size: x-large;
+  color: #4081eb;
+}
+
+hr {
+  width: 50%;
+  opacity: 0.4;
+  margin-left: 25%;
+}
+
+.upbtn{
+  position: relative;
+  top: 50px;
+  left: 140px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  width: 126px;
+  padding: 11px 0px;
+  background-color: rgb(16, 15, 15);
+ 
+  border-radius: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <img src="data:image/png;base64,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" alt="pin logo" class="img1" />
+    <p class="header">STUDENT LOGIN <p class="error"></p>  
+     
+      
+    
+<form action="/studentlogin" method="post">
+      <input type="text" placeholder="registration Number" name="registerationNumber" class="detail"  value="<%= locals.name %>" /><br />
+      <input type="text" placeholder="email" name="email" class="detail"  value="<%= locals.name %>" /><br />
+     <input type="password" placeholder="Password" name="password" class="detail" />
+  
+     <h4><a href="forgetpasswordmailpage">Forgot your password?</a></h4>
+
+      <button class="btn int">LOG IN</button><br>
+      <p class="error" style="text-transform: capitalize;font-weight:bold;color:red;"><%= locals.message %></p>
+    </form>
+    </div>
+  </div>
+  
+
+</body>
+</html>

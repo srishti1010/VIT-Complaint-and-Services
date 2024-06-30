@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .message-item {
+    background-color: #92C7CF;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 200px; /* Adjust height as needed */
+    width: calc(50% - 30px); /* Adjust width as needed */
+}
+
+
+        .service-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color:#92C7CF; /* Background color for each service item */
+            color: black;
+            border-radius: 5%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+        }
+
+        #services-panel {
+    position: absolute;
+    top: 27px; /* Adjust this value as needed */
+    right: 60px; /* Adjust this value as needed */
+    width: 400px; /* Adjust this value as needed */
+    background-color: #E5E1DA;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #161414; /* Text color */
+    font-family:'Times New Roman', Times, serif; /* Font family */
+    font-size: 16px; /* Font size */
+}
+
+        #services-panel h2 {
+            margin-bottom: 10px;
+            font-size: 20px; /* Header font size */
+            color: #333; /* Header text color */
+        }
+
+        .service-item p {
+            margin: 5px 0;
+        }
+
+        .service-item strong {
+            font-weight: bold; /* Bold text for service details */
+        }
+
+        .service-item a {
+            color: #007bff; /* Link color for service details */
+            text-decoration: none;
+        }
+
+        .service-item a:hover {
+            text-decoration: underline; /* Underline on hover for links */
+        }
+
+.message-item img {
+    border-radius: 100%;
+    object-fit: cover;
+    padding: 5px;
+    float: left;
+}
+
+.message-content {
+    margin-left: 120px; /* Adjust margin as needed */
+}
+
+.message-text {
+    font-size: 16px;
+    color: black;
+}
+
+.message-actions {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.message-actions button {
+    background-color: #fff;
+    color: purple; 
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.message-actions button:hover {
+    background-color: purple;
+    color: #fff;
+}
+        #vit{
+            font-size:50px;
+            font-family:'Times New Roman', Times, serif;
+            color:rgb(51, 13, 40);
+            font-weight:900;
+            display: inline;
+            position:relative;
+            left: 10px;
+            
+        }
+        #symbol{
+            position:relative;
+            left:10px;
+            top:10px;
+        }
+        #dash{
+            position: absolute;
+            top:18px;
+            left:350px;
+            font-size: 30px;
+            top:25px;
+            font-weight: bolder;
+        }
+        #message{
+            position:absolute;
+            top:18px;
+            left: 1000px;
+        }
+        #not{
+            position:absolute;
+            top:18px;
+            left: 1100px;
+        }
+        #tri{
+            position:absolute;
+            top:18px;
+            left: 1200px;
+        }
+        #id{
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight:bold;
+            position:absolute;
+            top:27px;
+            left: 1250px;
+        }
+        #user{
+            position:absolute;
+            top:18px;
+            left: 1400px;
+        }
+        #help{
+            position:absolute;
+            top:600px;
+           white-space: nowrap; 
+    }
+        #con{
+            display:block;
+            position:absolute;
+            top:120px;
+            left:10px;
+        }
+        #dashboard, #services, #complaint,#mes {
+        margin-bottom: 20px;
+        }
+     
+        #my{
+            position:absolute;
+            top:215px;
+        }
+        #setting{
+            position:absolute;
+            top:270px;
+        }
+        #help{
+            position:absolute;
+            top:330px;
+           white-space: nowrap; 
+    }
+         #con2{
+            height: 690px;
+            width:89%;
+            position:absolute;
+            left: 170px;
+            top:90px;
+            background-color: rgb(146, 199, 207);
+            color:rgb(14, 10, 10);
+            padding:20px;
+            box-sizing: border-box;
+         } 
+    #purple {
+    background-color:rgb(229, 225, 218);
+    padding: 10px;
+    border-radius: 5px;
+    height:190px;
+    width: 57%;
+    
+    
+
+}
+#di:hover{
+    background-color: red;
+}
+
+button[value="Check out"] {
+    background-color:rgb(146, 199, 207);
+    color: black; 
+    height:40px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+
+button[value="Learn More"] {
+    background-color:rgb(146, 199, 207);
+    color: black; 
+    border:none;
+    padding: 10px 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#para{
+    font-size: 40px;
+    font-weight: 100;
+}
+#dibbe{
+    display: inline;
+    background-color: rgb(251, 249, 241);
+    width: 120px;
+    border-radius: 5px;
+    position:relative;
+    top:10px;
+    padding: 10px;
+    height: 40px;
+    margin:13px;
+    color:white;
+
+}
+#dibb,#dib,#di,#d{
+    display: inline;
+    background-color: rgb(251, 249, 241);
+    width: 120px;
+    border-radius: 10px;
+    position:relative;
+    top:10px;
+    height: 40px;
+    margin:15px;
+}
+#room, #trans, #main, #comp {
+            height: 100px;
+            width: 365px;
+            border-radius: 5%;
+            background-color:#E5E1DA;
+            color:black;
+            margin-top: 10px;
+        }
+
+        #room {
+             position:relative;
+             top:10px;
+        }
+        #trans {
+             position:absolute;
+             top:310px;
+             left: 400px;
+        }
+        #main {
+            position:relative;
+             top:10px;
+
+        }
+        #comp {
+             position:absolute;
+             top:420px;
+             left: 400px;
+        }
+        #room img,#trans img,#main img,#comp img {
+         border-radius: 100%;
+         object-fit: cover;
+         padding: 5px;
+     
+}
+#room-text {
+            font-weight: bold;
+            margin-left: 20px;
+            font-size: 16px; 
+            color:black; 
+            position:absolute;
+            top: 25px;
+            left: 100px;
+        }
+        #trans-text {
+            font-weight: bold;
+            margin-left: 20px;
+            font-size: 16px; 
+            color:black; 
+            position:absolute;
+            top: 25px;
+            left: 120px;
+        }
+        #main-text {
+            font-weight: bold;
+            margin-left: 30px;
+            font-size: 16px; 
+            color:black; 
+            position:absolute;
+            top: 25px;
+            left: 100px;
+        }
+        .container111{
+       position: absolute;
+       bottom: 0px;
+       width: 100%;
+        }
+        #comp-text {
+            font-weight: bold;
+            margin-left: 10px;
+            font-size: 16px; 
+            color:black; 
+            position:absolute;
+            top: 25px;
+            left: 125px;
+        }
+     
+    #id{
+        position:absolute;
+        top:14px;
+    }
+    @media(max-width :1231px){
+        html{
+            font-size:55%;
+        }
+    }
+    /* Default styles */
+
+/* Add your default styles here */
+
+
+a:link{
+            text-decoration: none;
+        }
+        a{
+            font-weight: bolder;
+            color: black;
+        }
+
+        #disp-message {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    background-color: #f4f4f4; /* Background color */
+    border: 1px solid #ddd; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the box */
+    color:black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    height:500px;
+}
+
+    
+    </style>
+</head>
+<body bgcolor="white">
+    <div id="symbol"><img src="https://vit.ac.in/SGGES-21/assets/vit%20logo.png" height="130"><div id="vit"></div><div id="dash" style="position:absolute;top: 40px;left: 170px;font-size: 40px;font-family: 'Times New Roman', Times, serif;">Admin Dashboard</div>
+    
+    <div id="id" style="position:absolute;top: 25px;left: 1300px;"><%=check1.username%></div>
+    <div id="user"><a href="adminprofile"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsLQpfDe3ep3Ok_0Mv_jXJvOxvZ5Y0ImFdmBNa6XydDw&s" height="40" ></a></div>
+    <div id="con">
+    <div id="dashboard" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFBZwOg27YgEy8Nfx-y5vLLcxfqqVJc44jg7X8DP9IrFncNEnooZJcI7WJ7F2lzmV0LqI&usqp=CAU" height="30"><div id="1" style="position:absolute;top:9px;left:25px;"><a href="adminhome"> Dashboard </a></style></div> </div>
+    <div id="services" ><img src="https://img.freepik.com/premium-vector/service-logo-template-design-vector_20029-568.jpg" height="30" > <div id="2" style="position:absolute;top:59px;left:25px;"><a href="adminstudent"> Studentinfo  </a></div></div>
+    <div id="complaint" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8BAQHq6ur7+/sTExMEBATn5+f5+fmqqqrZ2dnU1NT29vbf399VVVWenp6VlZVlZWWysrJcXFyHh4cfHx9tbW0PDw8YGBhQUFC4uLjExMSQkJAtLS19fX1gYGDPz887OztHR0cyMjK/v783NzdycnJur9ZOAAAEy0lEQVR4nO2ci1LqMBCGG2IodwQKiKjA4fj+r3hawCPXlnb/XbrMfjPO6CiT/dw0tyaJ2o3nph01ouemYYbqMUP9mKF+zFA/ZqgfM9SPGerHDPVjhvoxQ/2YoX7MUD9mqB8z1I8Z6scM9WOG+jFD/ZihfsxQP2aoHzPUjxnqxwz1Y4b6MUP9mKF+zFA/ZgjFe3/4Rq5M6RzGq8Gw1ZEUlDWMJ25HMpIrU9DQR83E/TD2YnkUM/RRY+7CQTC4V7FnUdDwy4XwIxhcS6ZYScOOOyGJZcoVfA4nJ4LBrYTKlTNcnxkOhMoVMNxVx25vdlpL3bS3+wV7gyOSw2ZrfO6XMe+3mvyFCxgu3nbVMpzY/fzUX3AXz20YD65l75jZwLPWVWbD0ctxwq6R/u5lwanIatgc59v9p88YBJ+hj97vkTvwzpZGxhwOCurnaVVl6x65DP1+DHOvYfp3y4hnvsFk6KNhiSq6Z8hTT7ly2Crrl6ZxxKLIZNgpVrpCmyMUHkP/UcnwQ08Ol+eDtDuZMMTCYtirlMEMhpE4i+G0suEU39hwGPbu7gdPyT7Ug0fDYfhZOYXOfcKjYTDsEgSdq38t9VlnX6mSZjCsMjLk8I2Uwzd0OHjDJsUvTT46Hrxh6RHpiSF+dIo3/KIYpryC48G3NEmxRC4JeJoIN+xVb0gPgDt9uOGCbAheQYUbLsmGS2xAYMPdW0KiIbipgeew2tz3mD/YgOCGZEEXsAHV0NBhA0Ib0iYWe7rQiNCGDYAhOCKwIWncfQC7WIM2rL4IZYZVsVpaFoRhvVsaRFta797i+ftDDzCs+QwYYIgNyAxLY4bqDREtDTQguGEMMKx3W/r8syfEyBu7YIo2XAEMsTvA0YYjgCF2SRhtOCkWKCCAl4TRhmNADsfQnZhoQ7pfyDrE+hpW2892TgcZEthwCTFc1jiH9LcWGdA3F0hDH23JL572vMNiQufwL8TPuTUwJqjhgLBX6BjosS+k4WofHcIQ2JwCDdsAt19gw2+cYefi9BaJgMoizHAEFoQNwCGGPvKUPaW3+Owihm+YHPbWxfGWJrg14mGEGFJ2lObTomcRYBhX37hezNRTFemG3Y0rOiZambTt2lDf09ANN1x6B6ibhsmG5c+olSLN4vCxhoj3hfmKLtDqKdUQNV/KU6TNpaiGpF3dd0I7oGCGRbDX0vDoWtrlfwwf3NJwV9OQVVLSqIZqWOXQdjmI3SHAMGp/Jy95FORonvPReTIlT4TphlkV8jkULIPP8z58+B8+1LCYgp1uH8zFCxhG+ZNH9DGnCwQMN7mG1IakEAHD241tZg59z3QNAcPcs17g4yNXkLjrq5+TRP5b2yQMV7eWUtPOkP9+SJEb6T5vLhZvuQsXupHOJzceRfz9ApfI3JvYnO1u9DytojPXl7jDVOhmyOz62Ys0jslrofcgdfdl93KjDfis6C3kbvccZbsYwq7Jyb76LFcmXUHwlt14+9sxfnciqVu9Ze/zjjuLwbC1zV4pPd9d0A/DDPVjhvoxQ/2YoX7MUD9mqB8z1I8Z6scM9WOG+jFD/ZihfsxQP2aoHzPUjxnqxwz1Y4b6MUP9mKF+zFA/ZqgfM9SPGerHDPVjhvoxQ/2YoX7MUD+NqN14btr/AIp2MeM6umHbAAAAAElFTkSuQmCC" height="30">  <div id="3" style="position:absolute;top:115px;left:25px;"><a href="adminallcomplaint"> Complaints </a></div></div>
+    <div id="mes" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbq9PJpPh-AnviQCSYmceiyOm53CJSkMqGvz2wEfxhy1zTvSXdxc1It7xh9KvdTysCOQw&usqp=CAU" height="30">  <div id="2" style="position:absolute;top:169px;left:35px;"><a href="adminmessage"> Message </a></div></div>
+    <div id="my" ><img src="https://png.pngtree.com/png-vector/20191110/ourmid/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg" height="30">  <div id="2" style="position:absolute;top:9px;left:25px; white-space: nowrap; "><a href="/"> Logout </a> </div></div>
+    <div id="setting"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVpygZ5U1fVNNXuejuqmeOn80Mu779lfDEJ7-VxCFjeJlrGZnCkJoHFihCe1ySAPD98yY&usqp=CAU" height="30">  <div id="2" style="position:absolute;top:9px;left:30px;  white-space: nowrap; "><a href="adminupdateinfo"> Update Info </a></div></div>
+    <div id="help" style="position:absolute;top: 330px;"><img src="https://t3.ftcdn.net/jpg/05/10/88/82/360_F_510888200_EentlrpDCeyf2L5FZEeSfgYaeiZ80qAU.jpg" height="20"> <div id="2" style="position:absolute;top:9px;left:30px;"><a href=""> Help and Support </a></div></div>
+    </div>
+    <div id="con2">
+      <div id="purple"><div id="para">Check all the <br>Incoming Requests<br></div>Remember to clear everything ASAP.<br> <button value="Check out" >Check More</button> <button value="Learn More" >Learn More</button> </div>
+     
+       <button id="dibbe"><a href="adminpendingcomplaint"> Pending </a></button> 
+       <button id="dibb"><a href="admincompletedcomplaint"> Completed </a></button> 
+       <button id="dib"><a href="adminhostelcomplaint"> Hostel </a></button> 
+       <button id="di" style="color:white;"><a href="adminraggingcomplaint"> Ragging </a></button> 
+       <button id="d"><a href="adminmesscomplaint"> Mess</a></button> 
+       <div id="room">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHzfPJLEt1so_JHFcU8AgcDXmVikfjmdp7zQ&s" height="80" width="100">
+        <div id="room-text">
+            <b>Worker Details</b> <br>
+            <font color="purple"><a href="adminworkerdetails"> See Details </a></font>
+        </div>
+    </div>
+    <div id="trans">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUnFVCm1MJ5vGZZgur37N292KixyUXnXe_hQ&s" height="80">
+        <div id="trans-text">
+            <b>Transport Details</b> <br>
+            <font color="purple"><a href="admintransportdetails"> See Details </a></font>
+        </div>
+    </div>
+
+    
+    <div id="main">
+        <img src="data:image/jpeg;base64,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" height="80" width="105">
+        <div id="main-text">
+            <b>Student Info</b> <br>
+            <font color="purple"><a href="adminstudent"> See Details </a></font>
+        </div>
+    </div>
+
+    
+    <div id="comp">
+        <img src="https://blog.ipleaders.in/wp-content/uploads/2020/10/unnamed-1.jpg" height="70">
+        <div id="comp-text">
+            <b>Warden details</b> <br>
+            <font color="purple"><a href="adminwardendetails"> See Details</a></font>
+        </div>
+    </div>
+  <a href="adminmessage"> <div id="services-panel">
+        <h2><center> Messages </center></h2>
+        <% fetchedmessages.forEach(function(service) { %>
+            <div class="service-item">
+                <p><strong>Id:</strong> <%= service.id %></p>
+                <p><strong>Date:</strong> <%= service.date %></p>
+                <p><strong>title :</strong> <%= service.title%></p>
+            </div>
+        <% }); %>
+    </div></a> 
+    </div>
+  
+</body>
+</html>
